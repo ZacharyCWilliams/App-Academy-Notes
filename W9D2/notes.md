@@ -43,15 +43,17 @@ Example:
   3. Change it's role and become the information searcher. It will then pass the information to another name server (This is done recursively)
   3. Return it's best guess as to what other name server might have the information. It will then return that name servers IP address to the original resolver so that it can search through that server. (This is done iteratively)
 
-  ## A security risk: Cache Poisioning
+## A security risk: Cache Poisioning
 
-  Attacker replaces valid cache entries with corrupted data (usually a redirect to their site)
+Attacker replaces valid cache entries with corrupted data (usually a redirect to their site)
 
-  Consider the following example: 
-  
-  1. You want to go to bankofamerica.com
-  2. They send you to bankofusa.com 
-  3. You put in your banking login info and now the attacker has access to your account
+Consider the following example: 
+
+1. You want to go to bankofamerica.com
+2. They send you to bankofusa.com 
+3. You put in your banking login info and now the attacker has access to your account
+
+## Building A JSON API
 
 
 
