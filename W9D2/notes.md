@@ -40,8 +40,8 @@ Example:
 1. Query moves from DNS resolver to DNS server
 2. If server doesn't need to look up additional info it will return result
 3. If server needs to look up additional info it will either:
-  3. Change it's role and become the information searcher. It will then pass the information to another name server (This is done recursively)
-  3. Return it's best guess as to what other name server might have the information. It will then return that name servers IP address to the original resolver so that it can search through that server. (This is done iteratively)
+  3a. Change it's role and become the information searcher. It will then pass the information to another name server (This is done recursively)
+  3b. Return it's best guess as to what other name server might have the information. It will then return that name servers IP address to the original resolver so that it can search through that server. (This is done iteratively)
 
 ## A security risk: Cache Poisioning
 
