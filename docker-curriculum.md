@@ -19,4 +19,17 @@ The Docker CLI uses the Docker REST api to interact with docker `daemon`.
 The daemon creates/manages Docker objects (images, containers, networks, and volumes)
 ```
 
+## Containers
+
+A container is an instance of an `image` running, as a process, on your machine.
+
+**What's an image?**
+
+An image is an application we want to run. Examples:
+
+* Node
+* Ruby
+* Postgres
+
+We can find images in the [Docker Hub](https://hub.docker.com).
 
