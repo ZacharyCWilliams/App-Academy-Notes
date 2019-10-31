@@ -57,54 +57,54 @@ Here's an image of the Docker lifecyle:
 
 List out all options available to you:
 
-```
+```javascript
 docker --help
 ```
 
 Check out the Docker run documentation for a list of options and flags:
 
-```
+```javascript
 docker run [OPTIONS] IMAGE[:TAGNUMBER] [COMMAND]
 ```
 
 Lists all your running containers:
 
-```
+```javascript
 docker container ls
 ```
 
 Lists all your containers (running or stopped):
 
-```
+```javascript
 docker container ls -a
 ```
 
 Return json with the metadata about that specific container:
 
-```
+```javascript
 docker container inspect <CONTAINERNAME>
 ```
 
 Display the running processes of a container:
 
-```
+```javascript
 docker container top <CONTAINERNAME>
 ```
 
 Remove one or more stopped containers:
 
-```
+```javascript
 docker container rm <CONTAINERNAME>
 ```
 
 Stop and remove a running container:
 
-```
+```javascript
 docker container rm -f <CONTAINERNAME>
 ```
 
 Run a command in a running container:
 
-```
+```javascript
 docker container run exec
 ```
