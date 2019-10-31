@@ -37,3 +37,15 @@ We can find images in the [Docker Hub](https://hub.docker.com).
 
 Docker containers (& their data) can be built and destroyed very quickly. This makes them perfect for temporal tasks. That being said, they can also run long-running `daemons` like web servers.
 
+## Running Containers
+
+Containers are runtime environments. Example of how to start container
+
+```javascript
+docker container run -d -p 8080:80 --name web nginx
+```
+
+^When a container starts up it looks for the `image` locally. If it can't find the image it searches for it in the Docker Hub. It then downloads the latest version of the image and creates a new container based off that downloaded image.
+
+Once that's completed, Docker gives the container the virtual IP on the private network inside of the Docker engine. It also opens up a port on your localhost (in the example above this is port 8080) and forwards any traffic to a port in the container (port 80 in the example above). Finally, it starts the container by using the `CMD` in the image's Dockerfile.
+
