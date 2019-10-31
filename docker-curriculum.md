@@ -49,3 +49,4 @@ docker container run -d -p 8080:80 --name web nginx
 
 Once that's completed, Docker gives the container the virtual IP on the private network inside of the Docker engine. It also opens up a port on your localhost (in the example above this is port 8080) and forwards any traffic to a port in the container (port 80 in the example above). Finally, it starts the container by using the `CMD` in the image's Dockerfile.
 
+![Docker](https://cdn-media-1.freecodecamp.org/images/1*easlVE_DOqRDUDkVINRI9g.png)
