@@ -33,3 +33,7 @@ An image is an application we want to run. Examples:
 
 We can find images in the [Docker Hub](https://hub.docker.com).
 
+## Docker Container Lifecycle
+
+Docker containers (& their data) can be built and destroyed very quickly. This makes them perfect for temporal tasks. That being said, they can also run long-running `daemons` like web servers.
+
