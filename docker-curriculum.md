@@ -108,3 +108,16 @@ Run a command in a running container:
 ```javascript
 docker container run exec
 ```
+
+## Monitoring Containers
+
+We want to be able to monitor the resources taken up by our processes. We can view this information through the command `docker container stats`. This will return something that looks like:
+
+```
+CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+1be21246b909        httpd1              0.02%               5.562MiB / 2.934GiB   0.19%               648B / 0B           98.3kB / 0B         82
+4f0ace5722fc        mysql1              2.18%               376.2MiB / 2.934GiB   12.52%              718B / 0B           111kB / 1.26GB      38
+1b00fb53a1a6        nginx1              0.00%               1.918MiB / 2.934GiB   0.06%               1.35kB / 0B         0B / 0B             2
+```
+
+
