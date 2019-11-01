@@ -124,4 +124,16 @@ CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   
 
 Although containers are temporal, we can store data to the host machine (persist data) through two different options: `volumes` and `bind mounts`. **Bind Mounts** can be stored anywhere on the container host and mounted on the running container whereas the host filesystem stores **volumes** but they are managed by Docker. 
 
+## Docker Networks
+
+Each container runs one process, but we want these isolated containers to communicate and exchange information with one another. (This ability containers have to connect together with one another/with non-docker workloads is what makes Docker such a powerful tool!)
+
+**Docker high level overview:**
+
+1. You create network which creates subnet for an isolated network
+2. You create a container and attach it to this network
+3. As long as these containers are on the same network, they can be connected
+
+## Default Bridge Network
+
 
