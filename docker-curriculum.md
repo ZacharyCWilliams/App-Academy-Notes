@@ -120,4 +120,8 @@ CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT   
 1b00fb53a1a6        nginx1              0.00%               1.918MiB / 2.934GiB   0.06%               1.35kB / 0B         0B / 0B             2
 ```
 
+## Persisting Data in Docker
+
+Although containers are temporal, we can store data to the host machine (persist data) through two different options: `volumes` and `bind mounts`. **Bind Mounts** can be stored anywhere on the container host and mounted on the running container whereas the host filesystem stores **volumes** but they are managed by Docker. 
+
 
