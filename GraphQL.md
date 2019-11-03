@@ -46,13 +46,13 @@ Additionally, the bulk of REST processing is dependent on the server. When REST 
 
 They're several advantages to using GraphQL. They include:
 
-**Single Request/Response**: Queries are packaged into a single request to the backend (This makes data delivery more efficient and gives the client more power).
+**Single Request/Response:** Queries are packaged into a single request to the backend (This makes data delivery more efficient and gives the client more power).
 
-**Precision**: When querying with GraphQL we specify which data we want to return from the server.. so we never overfetch/fetch content that we don't need! 
+**Precision:** When querying with GraphQL we specify which data we want to return from the server.. so we never overfetch/fetch content that we don't need! 
 
-**Server Client Balance**: GraphQL makes use of our evolved hardware by giving power back to the client.. reducing the burden we place on the server.
+**Server Client Balance:** GraphQL makes use of our evolved hardware by giving power back to the client.. reducing the burden we place on the server.
 
-GraphQL lets us model relationships between our data (appreciates in value as apps become more and more relational). When using GraphQL we make less requests and are way more efficient!
+**GraphQL lets us model relationships between our data (appreciates in value as apps become more and more relational). When using GraphQL we make less requests and are way more efficient!**
 
 
 
