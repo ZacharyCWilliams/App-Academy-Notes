@@ -14,3 +14,8 @@ developer tools.
 
 [These](https://landscape.graphql.org/category=graph-ql-adopter&format=card-mode&grouping=category) companies are using GraphQL. Very in demand!
 
+## Graphs
+
+Graphs are a powerful data structure. They consist of a set of nodes and edges which connect pairs of nodes. Here's an example:
+
+(https://miro.medium.com/max/3780/1*z0-1RpRpVn_i-92AMR_2BA.png)
