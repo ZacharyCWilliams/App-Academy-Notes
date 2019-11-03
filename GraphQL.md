@@ -54,5 +54,40 @@ They're several advantages to using GraphQL. They include:
 
 **GraphQL lets us model relationships between our data (appreciates in value as apps become more and more relational). When using GraphQL we make less requests and are way more efficient!**
 
+## JSON
 
+GraphQL query results come back in JSON (JavaScript Object Notation is easy for both humans and machines to read). 
+
+JSON syntax:
+
+* Data is in name/value pairs
+* Data is separated by commas
+* Curly braces hold objects
+* Square brackets hold arrays
+* String values must be written with double quotes
+
+```json
+{
+    "name": "Jeff Bezos",
+    "age": 55,
+    "children": 4,
+    "height": 5.6,
+    "wealth": 137000000000,
+    "commendations": ["National Merit Scholar", "Silver Knight Award"],
+    "companies": {
+        "Amazon": {
+            "founded": 1994,
+            "description": "Online marketplace",
+            "missionStatement": "Our vision is to be earth's most customer-centric company; to build a place where people can come to find and discover anything they might want to buy online."
+        },
+        "blueOrigin": {
+            "founded": 2000,
+            "description": "Space travel",
+            "missionStatement": "We're committed to building a road to space so our children can build the future."
+        }
+    }
+}
+```
+
+Note: We must convert JSON objects before we can use the data. We also must convert JavaScript objects to JSON before we can send it to the server. 
 
