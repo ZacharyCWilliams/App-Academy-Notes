@@ -36,5 +36,11 @@ RESTful routes let us use a simple API for accessing/modifying data using HTTP r
 
 * **Code on demand:** Optional constraint. Lets server return executable code.
 
-## The drawbacks of RESTful routing
+## The drawbacks of RESTful routing 
+
+Modern apps have HIGHLY relational data (many edges relative to # of nodes). **Fetching highly relational data with a REST API leads to repetitive requests to the backend (expensive).**
+
+Additionally, the bulk of REST processing is dependent on the server. When REST was created user devices were slow and unreliable. However, **our devices have evolved and are much more powerful now - REST does not give us the ability to utilize this increased power!**
+
+
 
