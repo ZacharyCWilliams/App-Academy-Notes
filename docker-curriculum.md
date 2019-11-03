@@ -138,6 +138,10 @@ Each container runs one process, but we want these isolated containers to commun
 
 Each container is auto-connected to a virtual network called a `bridge`. You can view the list of your current Docker networks with `docker network ls`. For more detailed info use `docker network inspect <NETWORKNAME>`.
 
+## User Defined Networks
+
+User defined bridge networks are superior to the default bridge network because they provide better isolation, have automatic DNS resolution between containers, make attaching/detaching containers painless, & more.
+
 
 
 
