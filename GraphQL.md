@@ -106,4 +106,33 @@ variable which is not present on the current type, the
 variable will be underlined in red. Hovering over the variable will also display an error message.
 ```
 
+## Inline Fragments
 
+Setting up inline fragments for harry potter character types:
+
+```js
+type Muggle implements Character {
+  id: ID!
+  name: String!
+}
+
+type Wizard implements Character {
+  id: ID!
+  name: String!
+  house: [House]!
+}
+```
+
+Querying for a character by ID:
+
+```js
+query FindCharacter {
+  character(id: 117) {
+    name
+    // this allow us to only get house information if this character is a Wizard
+    ... on Wizard {
+      house
+    }
+  }
+}
+```
