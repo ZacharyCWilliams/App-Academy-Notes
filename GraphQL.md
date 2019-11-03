@@ -66,6 +66,8 @@ JSON syntax:
 * Square brackets hold arrays
 * String values must be written with double quotes
 
+Example:
+
 ```json
 {
     "name": "Jeff Bezos",
@@ -90,4 +92,18 @@ JSON syntax:
 ```
 
 Note: We must convert JSON objects before we can use the data. We also must convert JavaScript objects to JSON before we can send it to the server. 
+
+## GraphiQL
+
+[GraphiQL](https://github.com/graphql/graphiql) is an in-browser IDE for writing GraphQL queries. Once we open the interface, we'll see two panels. We write our queries on the left hand side and the results are displayed on the right hand side. 
+
+```
+When we configure a GraphQL application, we define our data 
+in 'types,' with each type representing a singular resource on 
+the server. Graphiql knows this schema and provides us with 
+error highlighting and prompts. If we try to query for a 
+variable which is not present on the current type, the 
+variable will be underlined in red. Hovering over the variable will also display an error message.
+```
+
 
