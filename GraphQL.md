@@ -42,5 +42,17 @@ Modern apps have HIGHLY relational data (many edges relative to # of nodes). **F
 
 Additionally, the bulk of REST processing is dependent on the server. When REST was created user devices were slow and unreliable. However, **our devices have evolved and are much more powerful now - REST does not give us the ability to utilize this increased power!**
 
+## Enter GraphQL 
+
+They're several advantages to using GraphQL. They include:
+
+**Single Request/Response**: Queries are packaged into a single request to the backend (This makes data delivery more efficient and gives the client more power).
+
+**Precision**: When querying with GraphQL we specify which data we want to return from the server.. so we never overfetch/fetch content that we don't need! 
+
+**Server Client Balance**: GraphQL makes use of our evolved hardware by giving power back to the client.. reducing the burden we place on the server.
+
+GraphQL lets us model relationships between our data (appreciates in value as apps become more and more relational). When using GraphQL we make less requests and are way more efficient!
+
 
 
