@@ -169,31 +169,32 @@ Install `[express-graphql](https://github.com/graphql/express-graphql)` and `gra
 Simple example of setting up a server using express and `express-graphql`:
 
 ```js
+const express = require('express');
 const expressGraphQL = require('express-graphql');
-const graphql = require('graphql');
-// we are requiring graphql here because we need it for the buildSchema function.
-const { buildSchema } = graphql;
+const { buildSchema } = require('graphql');
 
-// The buildSchema function can take in a string and outputs a GraphQLSchema object
+// Construct a schema, using GraphQL schema language
 const schema = buildSchema(`
   type Query {
     hello: String
   }
 `);
 
-// We are only including the root resolver for this demonstration to get a response without having a backend
+// The root provides a resolver function for each API endpoint
 const root = {
   hello: () => {
     return 'Hello world!';
   },
 };
 
-
+const app = express();
 app.use('/graphql', expressGraphQL({
-  graphiql: true,
-  // register our schema
   schema: schema,
-  // here we setup the root to have our response without a backend
-  rootValue: root
+  rootValue: root,
+  graphiql: true,
 }));
+
+app.listen(5000, () => {
+  console.log('Running a GraphQL API server at localhost:5000/graphql');
+});
 ```
