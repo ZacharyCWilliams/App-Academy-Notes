@@ -136,3 +136,22 @@ query FindCharacter {
   }
 }
 ```
+
+## Mutations
+
+Syntax for writing mutations: 
+
+```js
+mutation {
+    mutationName(key1: "val1", key2: "val2", ...) {
+        // These arguments specify the information to be returned from the backend
+        key1,
+        key2,
+        association {
+            id,
+            name,
+            ...
+        }
+    }
+}
+```
