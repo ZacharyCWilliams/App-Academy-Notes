@@ -166,4 +166,34 @@ mutation {
 
 Install `[express-graphql](https://github.com/graphql/express-graphql)` and `graphql`. 
 
-Next, 
+Simple example of setting up a server using express and `express-graphql`:
+
+```js
+const expressGraphQL = require('express-graphql');
+const graphql = require('graphql');
+// we are requiring graphql here because we need it for the buildSchema function.
+const { buildSchema } = graphql;
+
+// The buildSchema function can take in a string and outputs a GraphQLSchema object
+const schema = buildSchema(`
+  type Query {
+    hello: String
+  }
+`);
+
+// We are only including the root resolver for this demonstration to get a response without having a backend
+const root = {
+  hello: () => {
+    return 'Hello world!';
+  },
+};
+
+
+app.use('/graphql', expressGraphQL({
+  graphiql: true,
+  // register our schema
+  schema: schema,
+  // here we setup the root to have our response without a backend
+  rootValue: root
+}));
+```
