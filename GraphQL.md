@@ -155,3 +155,9 @@ mutation {
     }
 }
 ```
+
+## GraphQL Types
+
+**Scalar** types are concrete units of data (String, Int, Float, Boolean, ID). 
+
+**Object types** represent a kind of object you can fetch from your service, and what fields it has.
