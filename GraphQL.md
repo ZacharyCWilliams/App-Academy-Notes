@@ -198,3 +198,34 @@ app.listen(5000, () => {
   console.log('Running a GraphQL API server at localhost:5000/graphql');
 });
 ```
+
+## GraphQL Schemas
+
+The schema file tells GraphQL what the application data looks like. including all properties the data has, and how those properties relate to one another. The `GraphQL/type module` defines GraphQL types. The most basic schema componenets are `object types`. Object types represent an object you can fetch from your database and what fields that object has. Here's an example:
+
+```js
+// schema.js
+
+const graphql = require("graphql");
+// capitalization is important!
+const { GraphQLObjectType, GraphQLString, GraphQLInt } = graphql;
+
+// By creating a GraphQLObjectType we are telling GraphQL what a user looks like.
+const UserType = new GraphQLObjectType({
+  // the name property describes the type we are defining.
+  // Since we are defining a UserType the name will be UserType.
+  name: "UserType",
+  // fields is THE MOST important property - it refers to everything this Type will be able to return to you.
+  // Which means all of the data associated with this type in the database.
+  // If you don't have a field then you don't have returned data.
+
+  //For our User the fields ar id, name, and favoriteNumber.
+  fields: {
+    // we have to tell GraphQL what type of data each of these fields
+    // returned from the database are.
+    id: { type: GraphQLString },
+    name: { type: GraphQLString },
+    favoriteNumber: { type: GraphQLInt }
+  }
+});
+```
