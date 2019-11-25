@@ -313,3 +313,7 @@ General Flow:
 * Create fields in the rootQuery to be able to access those types
 
 [Here is a GraphQL cheatsheet for further reference on schema syntax.](https://devhints.io/graphql)
+
+## Writing Mutations
+
+GraphQL modifies our database through Mutations.
