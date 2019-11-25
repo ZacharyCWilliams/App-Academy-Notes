@@ -20,10 +20,11 @@ Bad Fast Growth
 
  In this section we'll explore how to analyze the efficiency of algorithms in terms of their speed (time complexity) and memory consumption (space complexity).
 
- The question we MUST ask ourselves the golden question, which is, **how does our performance scale?** In other words:
+ We MUST ask ourselves the golden question, which is, **how does our performance scale?** In other words:
 
  ```
-Will your code still be performant if we increase the size of the input? For example, sorting 3 numbers is trivial; but how about a million numbers?
+Will your code still be performant if we increase the size of the input? 
+For example, sorting 3 numbers is trivial; but how about a million numbers?
  ```
 
 
